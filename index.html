@@ -1,634 +1,645 @@
-<!doctype html>
-<html class="h-100" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
-  <meta name="author" content="Holger Koenemann">
-  <meta name="generator" content="Eleventy v2.0.0">
-  <meta name="HandheldFriendly" content="true">
-  <title>Klar HTML Template - Frontpage one</title>
-  <link rel="stylesheet" href="css/theme.min.css">
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Pavo is a mobile app Tailwind CSS HTML template created to help you present benefits, features and information about mobile apps in order to convince visitors to download them" />
+        <meta name="author" content="Your name" />
 
-  <style>
-    /* inter-300 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-300.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-300.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image" /> <!-- to have large image post format in Twitter -->
 
-    /* inter-400 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-regular.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+        <!-- Webpage Title -->
+        <title>Pavo Webpage Title</title>
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-500.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-500.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+        <!-- Styles -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+        <link href="css/fontawesome-all.css" rel="stylesheet" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="css/swiper.css" rel="stylesheet" />
+        <link href="css/magnific-popup.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-700.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('fonts/inter-v12-latin-700.woff') format('woff');
-      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-  </style>
+        <!-- Favicon  -->
+        <link rel="icon" href="images/favicon.png" />
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top">
 
+        <!-- Navigation -->
+        <nav class="navbar fixed-top">
+            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
+                
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
 
-</head>
+                <!-- Image Logo -->
+                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
+                    <img src="images/logo.svg" alt="alternative" class="h-8" />
+                </a>
 
-<body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
+                </button>
 
-  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
-    <div class="container">
-      <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
-          viewBox="0 0 16 16">
-          <path
-            d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
-          <path
-            d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
-        </svg>
-        <span class="ms-md-1 mt-1 fw-bolder me-md-5">Klar</span>
-      </a>
+                <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
+                    <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
+                        <li>
+                            <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="#details">Details</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="#download">Download</a>
+                        </li>
+                    </ul>
+                    <span class="block lg:ml-3.5">
+                        <a class="no-underline" href="#your-link">
+                            <i class="fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5"></i>
+                        </a>
+                        <a class="no-underline" href="#your-link">
+                            <i class="fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200"></i>
+                        </a>
+                    </span>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
 
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="content.html" aria-label="A sample content page">
-            Content
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="system.html" aria-label="A system message page">
-            System
-          </a>
-        </li>
-
-      </ul>
-      <a href="https://templatedeck.com/klar-html-template.html" aria-label="Download this template"
-        class="btn btn-outline-light">
-        <small>Download Template</small>
-      </a>
-    </div>
-  </nav>
-
-  <main>
-    <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade">
-      <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
-      <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
-        <div class="row d-flex align-items-center justify-content-center py-vh-5">
-          <div class="col-12 col-xl-10">
-            <span class="h5 text-secondary fw-lighter">Our Mission</span>
-            <h1 class="display-huge mt-3 mb-3 lh-1">We do ordinary stuff for cool people</h1>
-          </div>
-          <div class="col-12 col-xl-8">
-            <p class="lead text-secondary">We are some sort of DAO working with AI, NFT´s, web 4.0 and the so called
-              blockchain...in the Metaverse. You don´t understand a word? No problem, we neither!</p>
-          </div>
-          <div class="col-12 text-center">
-            <a href="#" class="btn btn-xl btn-light">Join us
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
-      <div class="container-fluid px-vw-5">
-        <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
-        <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
-          <div class="col-12 col-lg-6">
-            <img src="img/webp/abstract18.webp" width="2280" height="1732" alt="abstract image"
-              class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <img src="img/webp/abstract6.webp" width="1116" height="1578" alt="abstract image"
-              class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="2000">
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <img src="img/webp/abstract9.webp" width="1116" height="848" alt="abstract image"
-              class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="3000">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-dark">
-      <div class="container px-vw-5 py-vh-5">
-        <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
-            <span class="h5 text-secondary fw-lighter">What we do</span>
-            <h2 class="display-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h2>
-          </div>
-          <div class="col-12 col-lg-5" data-aos="fade-left">
-            <h3 class="pt-5">Product Design & Strategy</h3>
-            <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
-              <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-              </svg>
-            </p>
-            <h3 class="border-top border-secondary pt-5 mt-5">Development & Engineering</h3>
-            <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
-              <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-              </svg>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-black py-vh-3">
-      <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-
-        <div class="row gx-5">
-          <div class="col-12 col-md-6">
-            <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-              <div class="bg-dark shadow rounded-5 p-0">
-                <img src="img/webp/abstract3.webp" width="582" height="327" alt="abstract image"
-                  class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-                <div class="p-5">
-                  <h2 class="fw-lighter">Ipsum dolor est</h2>
-                  <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                  <a href="#" class="link-fancy link-fancy-light">Read more</a>
+        <!-- Header -->
+        <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+                <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                    <h1 class="h1-large mb-5">Team management mobile application</h1>
+                    <p class="p-large mb-8">Start getting things done together with your team based on Pavo's revolutionary team management features</p>
+                    <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
+                    <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
                 </div>
-              </div>
-            </div>
-
-            <div class="card bg-transparent" data-aos="zoom-in-up">
-              <div class="bg-dark shadow rounded-5 p-0">
-                <img src="img/webp/abstract2.webp" width="582" height="442" alt="abstract image"
-                  class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-                <div class="p-5">
-                  <h2 class="fw-lighter">Ipsum dolor est</h2>
-                  <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                  <a href="#" class="link-fancy link-fancy-light">Read more</a>
+                <div class="xl:text-right">
+                    <img class="inline" src="images/header-smartphone.png" alt="alternative" />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="p-5 pt-0 mt-5" data-aos="fade">
-              <span class="h5 text-secondary fw-lighter">What we don´t know</span>
-              <h2 class="display-4">There is a lot we don´t know. Here is a small sneak peek</h2>
-            </div>
-            <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
-              <div class="bg-dark shadow rounded-5 p-0">
-                <img src="img/webp/abstract17.webp" width="582" height="390" alt="abstract image"
-                  class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-                <div class="p-5">
-                  <h2 class="fw-lighter">Ipsum dolor est</h2>
-                  <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                  <a href="#" class="link-fancy link-fancy-light">Read more</a>
+            </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+
+
+        <!-- Introduction -->
+        <div class="pt-4 pb-14 text-center">
+            <div class="container px-4 sm:px-8 xl:px-4">
+                <p class="mb-4 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto"> Team management mobile apps don’t get better than Pavo. It’s probably the best app in the world for this purpose. Don’t hesitate to give it a try today and you will fall in love with it</p>
+            </div> <!-- end of container -->
+        </div>
+        <!-- end of introduction -->
+
+
+        <!-- Features -->
+        <div id="features" class="cards-1">
+            <div class="container px-4 sm:px-8 xl:px-4">
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/features-icon-1.svg" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Platform Integration</h5>
+                        <p class="mb-4">You sales force can use the app on any smartphone platform without compatibility issues</p>
+                    </div>
                 </div>
-              </div>
-            </div>
+                <!-- end of card -->
 
-            <div class="card bg-transparent" data-aos="zoom-in-up">
-              <div class="bg-dark shadow rounded-5 p-0">
-                <img src="img/webp/abstract4.webp" width="582" height="327" alt="abstract image"
-                  class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-                <div class="p-5">
-                  <h2 class="fw-lighter">Ipsum dolor est</h2>
-                  <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                  <a href="#" class="link-fancy link-fancy-light">Read more</a>
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/features-icon-2.svg" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Easy On Resources</h5>
+                        <p class="mb-4">Works smoothly even on older generation hardware due to our optimization efforts</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <!-- end of card -->
 
-      </div>
-
-    </div>
-    <div class="bg-dark position-relative">
-      <div class="container px-vw-5 py-vh-5">
-        <div class="row d-flex align-items-center">
-
-          <div class="col-12 col-lg-7">
-            <img class="img-fluid rounded-5 mb-n5 shadow" src="img/webp/person9.webp" width="512" height="512"
-              alt="a nice person" loading="lazy" data-aos="zoom-in-right">
-            <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/webp/person11.webp" width="512" height="512"
-              alt="another nice person" loading="lazy" data-aos="zoom-in-up">
-          </div>
-          <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
-            <span class="h5 text-secondary fw-lighter">Do you like faces?</span>
-            <h2 class="display-4">We constantly adding new images to our website. Does it make sense? No!</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-black">
-      <div class="container px-vw-5 py-vh-5">
-        <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-5 text-center text-lg-end" data-aos="zoom-in-right">
-            <span class="h5 text-secondary fw-lighter">What we charge</span>
-            <h2 class="display-4">You get all our knowledge for one simple price</h2>
-          </div>
-          <div class="col-12 col-lg-7 bg-dark rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
-            <h2 class="display-huge mb-5">
-              <span class="fs-4 me-2 fw-light">$</span><span class="border-bottom border-5">499</span><span
-                class="fs-6 fw-light">/day</span>
-            </h2>
-            <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#" class="btn btn-xl btn-light">Sign up
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="container-fluid px-vw-5 position-relative" data-aos="fade">
-      <div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
-      <div class="position-relative py-vh-5 bg-cover bg-center rounded-5"
-        style="background-image: url(img/webp/abstract12.webp)">
-        <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-          <div class="row d-flex align-items-center">
-
-            <div class="col-6 d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
-              <div class="row d-flex justify-content-center">
-                <div class="col-12">
-                  <img src="img/webp/person103.webp" width="684" height="457" alt="our CEO with some nice numbers"
-                    class="img-fluid rounded-5" loading="lazy">
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/features-icon-3.svg" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Great Performance</h5>
+                        <p class="mb-4">Optimized code and innovative technology insure no delays and ultra-fast responsiveness</p>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-10 col-xl-8 text-center my-5">
-                  <p class="lead border-bottom pb-4 border-secondary">"Lorem ipsum dolor sit amet, consetetur sadipscing
-                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                    takimata sanctus est Lorem ipsum dolor sit amet."</p>
-                  <p class="text-secondary text-center">Jane Doe, CEO</p>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/features-icon-4.svg" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Multiple Languages</h5>
+                        <p class="mb-4">Choose from one of the 40 languages that come pre-installed and start selling smarter</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-5 offset-1">
-              <span class="h5 text-secondary fw-lighter">The numbers</span>
-              <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">+400</h2>
-              <p class="h4 fw-lighter text-secondary">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-              </p>
+                <!-- end of card -->
 
-              <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">78.981
-              </h2>
-              <p class="h4 fw-lighter text-secondary">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-              </p>
-              <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">98%</h2>
-              <p class="h4 fw-lighter text-secondary">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="bg-dark py-vh-5">
-      <div class="container px-vw-5">
-        <div class="row d-flex gx-5 align-items-center">
-          <div class="col-12 col-lg-6">
-            <div class="rounded-5 bg-black p-5 shadow" data-aos="zoom-in-right">
-              <div class="fs-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-              </div>
-              <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et
-                dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-              <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-                <img src="img/webp/person14.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person"
-                  data-aos="fade" loading="lazy">
-                <div>
-                  <span class="h6 fw-5">Jane Doemunsky</span><br>
-                  <small class="text-secondary">COO, The Boo Corp.</small>
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/features-icon-5.svg" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Free Updates</h5>
+                        <p class="mb-4">Don't worry about future costs, pay once and receive all future updates at no extra cost</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="rounded-5 bg-black p-5 shadow mt-5" data-aos="zoom-in-right">
-              <div class="fs-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
+                <!-- end of card -->
 
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-half" viewBox="0 0 16 16">
-                  <path
-                    d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
-                </svg>
-
-              </div>
-              <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat."</p>
-              <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-                <img src="img/webp/person13.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person"
-                  data-aos="fade" loading="lazy">
-                <div>
-                  <span class="h6 fw-5">Jane Doemunsky</span><br>
-                  <small class="text-secondary">COO, The Boo Corp.</small>
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/features-icon-6.svg" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Community Support</h5>
+                        <p class="mb-4">Register the app and get acces to knowledge and ideas from the Pavo online community</p>
+                    </div>
                 </div>
-              </div>
-            </div>
+                <!-- end of card -->
 
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="p-5 pt-0" data-aos="fade">
-              <span class="h5 text-secondary fw-lighter">What others have to say</span>
-              <h2 class="display-4">Invidunt ut labore et dolore magna aliquyam erat.</h2>
-            </div>
-            <div class="rounded-5 bg-black p-5 shadow mt-5 gradient" data-aos="zoom-in-left">
-              <div class="fs-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
+            </div> <!-- end of container -->
+        </div> <!-- end of cards-1 -->
+        <!-- end of features -->
 
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
+        <!-- Details 1 -->
+        <div id="details" class="pt-12 pb-16 lg:pt-16">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+                <div class="lg:col-span-5">
+                    <div class="mb-16 lg:mb-0 xl:mt-16">
+                        <h2 class="mb-6">Results driven ground breaking technology</h2>
+                        <p class="mb-4">Based on our team's extensive experience in developing line of business applications and constructive customer feedback we reached a new level of revenue.</p>
+                        <p class="mb-4">We enjoy helping small and medium sized tech businesses take a shot at established Fortune 500 companies</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="lg:col-span-7">
+                    <div class="xl:ml-14">
+                        <img class="inline" src="images/details-1.jpg" alt="alternative" />
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of container -->
+        </div>
+        <!-- end of details 1 -->
 
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
+        <!-- Details 2 -->
+        <div class="py-24">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+                <div class="lg:col-span-7">
+                    <div class="mb-12 lg:mb-0 xl:mr-14">
+                        <img class="inline" src="images/details-2.jpg" alt="alternative" />
+                    </div>
+                </div> <!-- end of col -->
+                <div class="lg:col-span-5">
+                    <div class="xl:mt-12">
+                        <h2 class="mb-6">Instant results for the marketing department</h2>
+                        <ul class="list mb-7 space-y-2">
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Features that will help you and your marketers</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Smooth learning curve due to the knowledge base</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Ready out-of-the-box with minor setup settings</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Lightbox</a>
+                        <a class="btn-outline-reg" href="article.html">Details</a>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of container -->
+        </div>
+        <!-- end of details 2 -->
 
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
+        <!-- Details Lightbox -->
+        <!-- Lightbox -->
+        <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="lg:col-span-8">
+                    <div class="mb-12 text-center lg:mb-0 lg:text-left xl:mr-6">
+                        <img class="inline rounded-lg" src="images/details-lightbox.jpg" alt="alternative" />
+                    </div>
+                </div> <!-- end of col -->
+                <div class="lg:col-span-4">
+                    <h3 class="mb-2">Goals Setting</h3>
+                    <hr class="w-11 h-0.5 mt-0.5 mb-4 ml-0 border-none bg-indigo-600" />
+                    <p>The app can easily help you track your personal development evolution if you take the time to set it up.</p>
+                    <h4 class="mt-7 mb-2.5">User Feedback</h4>
+                    <p class="mb-4">This is a great app which can help you save time and make your live easier. And it will help improve your productivity.</p>
+                    <ul class="list mb-6 space-y-2">
+                        <li class="flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>Splash screen panel</div>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>Statistics graph report</div>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>Events calendar layout</div>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>Location details screen</div>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>Onboarding steps interface</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#download">Download</a>
+                    <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+        <!-- end of details lightbox -->
 
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
+        <!-- Details 3 -->
+        <div class="pt-16 pb-12">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+                <div class="lg:col-span-5">
+                    <div class="mb-16 lg:mb-0 xl:mt-16">
+                        <h2 class="mb-6">Platform integration and life time free updates</h2>
+                        <p class="mb-4">Get a glimpse of what this app can do for your marketing automation and understand why current users are so excited when using Pavo
+                            together with their teams.</p>
+                        <p class="mb-4">We will promptly answer any questions and honor your requests based on the service level agreement</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="lg:col-span-7">
+                    <div class="ml-14">
+                        <img class="inline" src="images/details-3.jpg" alt="alternative" />
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of container -->
+        </div>
+        <!-- end of details 3 -->
 
 
-              </div>
-              <p class="lead">"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat."</p>
-              <div class="d-flex justify-content-start align-items-center border-top pt-3">
-                <img src="img/webp/person16.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person"
-                  data-aos="fade" loading="lazy">
-                <div>
-                  <span class="h6 fw-5">Jane Doemunsky</span><br>
-                  <small>COO, The Boo Corp.</small>
+        <!-- Statistics -->
+        <div class="counter">
+            <div class="container px-4 sm:px-8">
+                
+                <!-- Counter -->
+                <div id="counter">
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="231">1</div>
+                        <p class="counter-info">Happy Users</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="385">1</div>
+                        <p class="counter-info">Issues Solved</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="159">1</div>
+                        <p class="counter-info">Good Reviews</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="127">1</div>
+                        <p class="counter-info">Case Studies</p>
+                    </div>
+                    <div class="cell">
+                        <div class="counter-value number-count" data-count="211">1</div>
+                        <p class="counter-info">Orders Received</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                <!-- end of counter -->
 
-    </div>
-
-  </main>
-
-  <footer class="bg-black border-top border-dark">
-    <div class="container py-vh-4 text-secondary fw-lighter">
-      <div class="row">
-        <div class="col-12 col-lg-5 py-4 text-center text-lg-start">
-          <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
-              viewBox="0 0 16 16">
-              <path
-                d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
-              <path
-                d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
-            </svg>
-            <span class="ms-md-1 mt-1 fw-bolder me-md-5">Klar</span>
-          </a>
-
-        </div>
-        <div class="col border-end border-dark">
-          <span class="h6">Company</span>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Legal</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Career</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col border-end border-dark">
-          <span class="h6">Services</span>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Products</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Customers</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Success Stories</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">More</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <span class="h6">Support</span>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Legal</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Career</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-fancy link-fancy-light">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container text-center small py-vh-2 border-top border-dark">Made by
-      <a href="https://templatedeck.com" class="link-fancy link-fancy-light" target="_blank">templatedeck.com</a>
-      Distributed by <a href="https://themewagon.com" class="link-fancy link-fancy-light" target="_blank">ThemeWagon</a>
-    </div>
-  </footer>
+            </div> <!-- end of container -->
+        </div> <!-- end of counter -->
+        <!-- end of statistics -->
 
 
+        <!-- Testimonials -->
+        <div class="slider-1 py-32 bg-gray">
+            <div class="container px-4 sm:px-8">
+                <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">What do users think about Pavo</h2>
+
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
+                            
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-1.jpg" alt="alternative" />
+                                    <div class="card-body">
+                                        <p class="italic mb-3">It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great</p>
+                                        <p class="testimonial-author">Jude Thorn - Designer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-2.jpg" alt="alternative" />
+                                    <div class="card-body">
+                                        <p class="italic mb-3">We were so focused on launching as many campaigns as possible that we've forgotten to target our loyal customers</p>
+                                        <p class="testimonial-author">Roy Smith - Developer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-3.jpg" alt="alternative" />
+                                    <div class="card-body">
+                                        <p class="italic mb-3">I've been searching for a tool like Pavo for so long. I love the reports it generates and the amazing high accuracy</p>
+                                        <p class="testimonial-author">Marsha Singer - Marketer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-4.jpg" alt="alternative" />
+                                    <div class="card-body">
+                                        <p class="italic mb-3">We've been waiting for a powerful piece of software that can help businesses manage their marketing projects</p>
+                                        <p class="testimonial-author">Tim Shaw - Designer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-5.jpg" alt="alternative" />
+                                    <div class="card-body">
+                                        <p class="italic mb-3">Searching for a great prototyping and layout design app was difficult but thankfully I found app suite quickly</p>
+                                        <p class="testimonial-author">Lindsay Spice - Marketer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-6.jpg" alt="alternative" />
+                                    <div class="card-body">
+                                        <p class="italic mb-3">The app support team is amazing. They've helped me with some issues and I am so grateful to the entire team</p>
+                                        <p class="testimonial-author">Ann Blake - Developer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                        </div> <!-- end of swiper-wrapper -->
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
+
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of slider-container -->
+                <!-- end of card slider -->
+
+            </div> <!-- end of container -->
+        </div> <!-- end of slider-1 -->
+        <!-- end of testimonials -->
 
 
+        <!-- Pricing -->
+        <div id="pricing" class="cards-2">
+            <div class="absolute bottom-0 h-40 w-full bg-white"></div>
+            <div class="container px-4 pb-px sm:px-8">
+                <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">Pricing options for all budgets</h2>
+                <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto"> Our pricing plans are setup in such a way that any user can start enjoying Pavo without worrying so much about costs. They are flexible and work for any type of industry </p>
+
+                <!-- Card-->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">STANDARD</div>
+                        <div class="price"><span class="currency">$</span><span class="value">29</span></div>
+                        <div class="frequency">monthly</div>
+                        <p>This basic package covers the marketing needs of small startups</p>
+                        <ul class="list mb-7 space-y-2 text-left">
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>List building and relations</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Seamless platform integration</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Great performance on devices</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Community support and videos</div>
+                            </li>
+                        </ul>
+                        <div class="button-wrapper">
+                            <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+                        </div>
+                    </div>
+                </div> <!-- end of card -->
+                <!-- end of card -->
+
+                <!-- Card-->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">ADVANCED</div>
+                        <div class="price"><span class="currency">$</span><span class="value">39</span></div>
+                        <div class="frequency">monthly</div>
+                        <p>This is a more advanced package suited for medium companies</p>
+                        <ul class="list mb-7 space-y-2 text-left">
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>List building and relations</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Seamless platform integration</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Great performance on devices</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Community support and videos</div>
+                            </li>
+                        </ul>
+                        <div class="button-wrapper">
+                            <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+                        </div>
+                    </div>
+                </div> <!-- end of card -->
+                <!-- end of card -->
+
+                <!-- Card-->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">COMPLETE</div>
+                        <div class="price"><span class="currency">$</span><span class="value">49</span></div>
+                        <div class="frequency">monthly</div>
+                        <p>This is a comprehensive package designed for big organizations</p>
+                        <ul class="list mb-7 text-left space-y-2">
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>List building and relations</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Seamless platform integration</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Great performance on devices</div>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-chevron-right"></i>
+                                <div>Community support and videos</div>
+                            </li>
+                        </ul>
+                        <div class="button-wrapper">
+                            <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+                        </div>
+                    </div>
+                </div> <!-- end of card -->
+                <!-- end of card -->
+
+            </div> <!-- end of container -->
+        </div> <!-- end of cards-2 -->
+        <!-- end of pricing -->
 
 
+        <!-- Conclusion -->
+        <div id="download" class="basic-5">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
+                <div class="mb-16 lg:mb-0">
+                    <img src="images/conclusion-smartphone.png" alt="alternative" />
+                </div>
+                <div class="lg:mt-24 xl:mt-44 xl:ml-12">
+                    <p class="mb-9 text-gray-800 text-3xl leading-10">Team management mobile applications don’t get much better than Pavo. Download it today</p>
+                    <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
+                    <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
+                </div>
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-5 -->
+        <!-- end of conclusion -->
 
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // values from 0 to 3000, with step 50ms
-    });
-  </script>
-  <script>
-    let scrollpos = window.scrollY;
-    const header = document.querySelector(".navbar");
-    const header_height = header.offsetHeight;
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container px-4 sm:px-8">
+                <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">Pavo is a mobile application for marketing automation and you can reach the team at <a class="text-indigo-600 hover:text-gray-500" href="mailto:email@domain.com">email@domain.com</a></h4>
+                <div class="social-container">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-youtube fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div> <!-- end of social-container -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->
+        <!-- end of footer -->
 
-    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
-    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
 
-    window.addEventListener('scroll', function () {
-      scrollpos = window.scrollY;
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
+                <ul class="mb-4 list-unstyled p-small">
+                    <li class="mb-2"><a href="article.html">Article Details</a></li>
+                    <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
+                    <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+                <p class="pb-2 p-small statement">Copyright © <a href="#your-link" class="no-underline">Your name</a></p>
 
-      if (scrollpos >= header_height) { add_class_on_scroll(); }
-      else { remove_class_on_scroll(); }
+                <p class="pb-2 p-small statement">Distributed by :<a href="https://themewagon.com/" class="no-underline">Themewagon</a></p>
+            </div> 
 
-      console.log(scrollpos);
-    })
-  </script>
+        <!-- end of container -->
+        </div> <!-- end of copyright -->
+        <!-- end of copyright -->
 
-</body>
 
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script> <!-- jQuery for JavaScript plugins -->
+        <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    </body>
 </html>
