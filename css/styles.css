@@ -573,7 +573,7 @@ input[type="checkbox"] {
 /*    Header     */
 /*****************/
 .header {
-    background: linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1));
+    background: linear-gradient(rgb(249 197 239), rgba(255, 255, 255, 1);
 }
 
 /********************/
